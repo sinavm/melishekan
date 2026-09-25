@@ -1,0 +1,40 @@
+name: Sync latest NV from sinavm
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '20 */2 * * *'
+  repository_dispatch:
+    types: [sync-nv]
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Download latest NVPS from sinavm/sinavm
+        run: |
+          set -euo pipefail
+          SRC="https://raw.githubusercontent.com/sinavm/sinavm/main/media/nv-latest-1.npvs"
+          curl -fL --retry 6 --retry-all-errors -o /tmp/latest.npvs "$SRC"
+          python3 - <<'PY'
+          from pathlib import Path
+          data = Path('/tmp/latest.npvs').read_bytes()
+          if data[:4] != b'NPVS':
+              raise SystemExit(f'not an NPVS file: {data[:8]!r}')
+          print('ok bytes', len(data))
+          PY
+          cp /tmp/latest.npvs melishekan.npvs
+          cp /tmp/latest.npvs melishekan-nv_01.npv
+          date -u +"%Y-%m-%dT%H:%M:%SZ" > LAST_SYNC.txt
+          echo "source=$SRC" >> LAST_SYNC.txt
+      - name: Commit if changed
+        run: |
+          git config user.name sinavm
+          git config user.email sina.bb2006@gmail.com
+          git add melishekan.npvs melishekan-nv_01.npv LAST_SYNC.txt
+          git commit -m "sync: latest NVPS from sinavm/sinavm" || echo nochange
+          git push

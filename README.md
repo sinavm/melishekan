@@ -2,84 +2,43 @@
 
 💥 **melishekan** – عبور از اینترنت ملی با یک کلیک!
 
-📡 این پروژه شامل یک فایل کانفیگ اختصاصی برای کلاینت  
-**NapsternetV (Npv Tunnel)**  
-می‌باشد که به کاربران داخل ایران کمک می‌کند در زمان **محدودیت، فیلترینگ گسترده یا ملی شدن اینترنت**، همچنان به اینترنت جهانی متصل بمانند.
+📡 این پروژه همیشه **آخرین فایل NV** منتشرشده در کانال / ریپو [sinavm/sinavm](https://github.com/sinavm/sinavm) را اینجا می‌گذارد.
 
-این ریپو مخصوص **کانفیگ NV (NapsternetV)** طراحی شده و برای شرایط اضطراری تست شده است.
+منبع زنده: `sinavm/sinavm/media/nv-latest-1.npvs`
 
 ---
 
-## ⬇️ دانلود فایل کانفیگ اتصال
+## ⬇️ دانلود فایل کانفیگ
 
-[⬇️ دانلود مستقیم فایل melishekan-nv_01.npv](https://github.com/sinavm/melishekan/releases/download/v1.0/melishekan-nv_01.npv)
+- [دانلود melishekan.npvs](https://raw.githubusercontent.com/sinavm/melishekan/main/melishekan.npvs)
+- [دانلود با نام قدیمی melishekan-nv_01.npv](https://raw.githubusercontent.com/sinavm/melishekan/main/melishekan-nv_01.npv)
+
+رمز فایل: `@sinavm`
 
 ---
 
 ## 📥 نصب برنامه (Npv Tunnel)
 
 ### 📱 آیفون (iOS)
-👉 https://apps.apple.com/us/app/npv-tunnel/id1629465476
+https://apps.apple.com/us/app/npv-tunnel/id1629465476
 
 ### 🤖 اندروید (Google Play)
-👉 https://play.google.com/store/apps/details?id=com.napsternetlabs.napsternetv
+https://play.google.com/store/apps/details?id=com.napsternetlabs.napsternetv
 
 ### 🤖 اندروید (نسخه جایگزین)
-👉 https://t.me/sinavm/3597
+https://t.me/sinavm/3597
 
 ---
 
-## 🛠️ نحوه استفاده (آموزش کامل)
+## 🛠️ نحوه استفاده
 
-1️⃣ **دانلود فایل کانفیگ**  
-روی لینک زیر بزنید تا فایل کانفیگ دانلود شود:  
-
-[⬇️ دانلود فایل کانفیگ melishekan-nv_01.npv](https://github.com/sinavm/melishekan/releases/download/v1.0/melishekan-nv_01.npv)
-
-2️⃣ **رفتن به پوشه دانلودها**  
-بعد از دانلود، فایل با نام  
-**melishekan-nv_01.npv**  
-داخل پوشه **Downloads / دانلودها** ذخیره می‌شود.
-
-3️⃣ **باز کردن فایل با NV**  
-- روی فایل دانلودشده ضربه بزنید  
-- از لیست برنامه‌ها، **NapsternetV (Npv Tunnel)** را انتخاب کنید  
-- در صورت نمایش، گزینه **Always / همیشه** را بزنید  
-
-📌 کانفیگ به‌صورت خودکار داخل برنامه ایمپورت می‌شود.
-
-4️⃣ **اتصال**  
-- وارد برنامه NapsternetV شوید  
-- کانفیگ ایمپورت‌شده را انتخاب کنید  
-- روی **Connect / اتصال** بزنید  
-- چند ثانیه صبر کنید تا وضعیت **Connected** نمایش داده شود ✅
+1. فایل بالا را دانلود کن.
+2. با **NapsternetV / Npv Tunnel** بازش کن.
+3. رمز `@sinavm` را بزن اگر پرسید.
+4. Connect بزن.
 
 ---
 
-## 🆘 اگر فایل به‌صورت خودکار باز نشد
-1. وارد برنامه **NapsternetV** شوید  
-2. از منو، گزینه **Import Config / Import File** را انتخاب کنید  
-3. مسیر **Downloads** را باز کنید  
-4. فایل **melishekan-nv_01.npv** را به‌صورت دستی ایمپورت کنید  
+## 📢 ارتباط
 
----
-
-## ⚠️ نکات مهم
-
-- این کانفیگ برای **استفاده شخصی** طراحی شده است  
-- مناسب شرایط **نت ملی، اختلال شدید و قطعی مقطعی**  
-- استفاده تجاری، سروری یا اشتراکی توصیه نمی‌شود  
-- مسئولیت نحوه استفاده بر عهده کاربر است  
-
----
-
-## 📢 ارتباط با ما
-
-📬 برای دریافت نسخه‌های به‌روزشده و اطلاعیه‌ها:  
-👉 https://t.me/sinavm
-
----
-
-با عشق ❤️  
-برای روزهای سخت اینترنت ایران  
-**SiNAVM**
+https://t.me/sinavm
