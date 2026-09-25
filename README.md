@@ -1,44 +1,19 @@
 # melishekan
 
-💥 **melishekan** – عبور از اینترنت ملی با یک کلیک!
+آخرین فایل NV کانال `@sinavm` اینجا می‌نشیند.
 
-📡 این پروژه همیشه **آخرین فایل NV** منتشرشده در کانال / ریپو [sinavm/sinavm](https://github.com/sinavm/sinavm) را اینجا می‌گذارد.
+مسیر:
+1. پست جدید NV در کانال
+2. ریپو `sinavm/sinavm` فایل را به `media/nv-latest-1.npvs` می‌برد
+3. این ریپو همان فایل را جایگزین می‌کند
 
-منبع زنده: `sinavm/sinavm/media/nv-latest-1.npvs`
+## دانلود ثابت
 
----
+- https://raw.githubusercontent.com/sinavm/melishekan/main/sinavm.npvs
+- https://raw.githubusercontent.com/sinavm/melishekan/main/sinavm-nv_01.npv
 
-## ⬇️ دانلود فایل کانفیگ
+رمز: `@sinavm`
 
-- [دانلود melishekan.npvs](https://raw.githubusercontent.com/sinavm/melishekan/main/melishekan.npvs)
-- [دانلود با نام قدیمی melishekan-nv_01.npv](https://raw.githubusercontent.com/sinavm/melishekan/main/melishekan-nv_01.npv)
+برنامه: [iOS](https://apps.apple.com/us/app/npv-tunnel/id1629465476) · [Android](https://play.google.com/store/apps/details?id=com.napsternetlabs.napsternetv)
 
-رمز فایل: `@sinavm`
-
----
-
-## 📥 نصب برنامه (Npv Tunnel)
-
-### 📱 آیفون (iOS)
-https://apps.apple.com/us/app/npv-tunnel/id1629465476
-
-### 🤖 اندروید (Google Play)
-https://play.google.com/store/apps/details?id=com.napsternetlabs.napsternetv
-
-### 🤖 اندروید (نسخه جایگزین)
-https://t.me/sinavm/3597
-
----
-
-## 🛠️ نحوه استفاده
-
-1. فایل بالا را دانلود کن.
-2. با **NapsternetV / Npv Tunnel** بازش کن.
-3. رمز `@sinavm` را بزن اگر پرسید.
-4. Connect بزن.
-
----
-
-## 📢 ارتباط
-
-https://t.me/sinavm
+کانال: https://t.me/sinavm
