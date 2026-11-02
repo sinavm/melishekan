@@ -18,14 +18,25 @@ jobs:
       - name: Download latest NVPS from sinavm/sinavm
         run: |
           set -euo pipefail
+          META="https://raw.githubusercontent.com/sinavm/sinavm/main/media/latest-nv.json"
           SRC="https://raw.githubusercontent.com/sinavm/sinavm/main/media/nv-latest-1.npvs"
+          curl -fL --retry 8 --retry-all-errors --retry-delay 3 -o /tmp/latest-nv.json "$META"
           curl -fL --retry 8 --retry-all-errors --retry-delay 3 -o /tmp/latest.npvs "$SRC"
           python3 - <<'PY'
+          import json
           from pathlib import Path
+          items = json.loads(Path('/tmp/latest-nv.json').read_text(encoding='utf-8'))
+          if not items:
+              raise SystemExit('no NV attachment metadata found')
+          item = items[0]
+          original_name = item.get('original_name') or item.get('filename') or ''
+          ext = Path(original_name).suffix.lower()
+          if ext not in {'.npvs', '.nvps', '.npv', '.npvt'}:
+              raise SystemExit(f'refusing non-NV attachment: {original_name!r}')
           data = Path('/tmp/latest.npvs').read_bytes()
-          if len(data) < 100 or data[:4] != b'NPVS':
-              raise SystemExit(f'invalid NVPS: magic={data[:8]!r} size={len(data)}')
-          print('ok bytes', len(data))
+          if len(data) < 100:
+              raise SystemExit(f'invalid config size: {len(data)} bytes')
+          print(f'validated NV attachment id={item.get("id")} name={original_name!r} bytes={len(data)}')
           PY
           cp /tmp/latest.npvs sinavm.npvs
           cp /tmp/latest.npvs sinavm-nv_01.npv
