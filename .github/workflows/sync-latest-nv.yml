@@ -2,6 +2,9 @@ name: Sync latest NV from sinavm
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/sync-latest-nv.yml"
   schedule:
     - cron: '20 */2 * * *'
   repository_dispatch:
