@@ -24,6 +24,7 @@ main{width:min(100% - 28px,680px);margin:34px auto 70px;display:grid;gap:20px}
 .password{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 12px;background:#00000024;border:1px dashed #64748b66;border-radius:12px;font-size:.8rem}.password span{color:var(--muted)}.password code{font:800 .88rem Vazirmatn,sans-serif;direction:ltr;color:#e0f2fe}
 .footer{text-align:center;color:var(--muted);font-size:.75rem;line-height:2;padding:6px}.footer a{color:var(--cyan)}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#059669;color:#fff;padding:11px 18px;border-radius:13px;font-size:.82rem;font-weight:700;transition:.25s;z-index:20;box-shadow:0 8px 30px #0006}.toast.show{opacity:1;transform:translate(-50%,0)}
 @media(max-width:420px){main{width:min(100% - 20px,680px);margin-top:22px}.panel{padding:15px}.steps{grid-template-columns:1fr}.actions{grid-template-columns:1fr 1fr}.tag{font-size:.61rem}}
+.tutorial-panel{border:1px solid #22d3ee55;background:linear-gradient(145deg,rgba(8,145,178,.16),rgba(37,99,235,.09) 55%,rgba(20,31,54,.88));box-shadow:0 18px 60px #0891b226,0 18px 60px #02061730}.tutorial-panel .section-icon{background:#22d3ee22;color:#67e8f9}.video-wrap{overflow:hidden;border-radius:17px;border:1px solid #67e8f944;background:#020617;box-shadow:0 12px 36px #02061766}.video-wrap video{display:block;width:100%;max-height:430px;aspect-ratio:16/9;object-fit:contain;background:#020617}.video-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:13px}.video-download{background:linear-gradient(120deg,#0891b2,#2563eb);color:#fff}.video-hint{color:var(--muted);font-size:.76rem;line-height:1.9;margin:11px 2px 0}@media(max-width:420px){.video-actions{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -35,6 +36,20 @@ main{width:min(100% - 28px,680px);margin:34px auto 70px;display:grid;gap:20px}
 <h1>کانفیگ‌های <span style="color:var(--cyan)">HTTP Custom</span></h1>
 <p>فایل موردنظرت را انتخاب کن، دانلود کن و طبق آموزش وارد برنامه کن. نیازی به کار با GitHub نداری.</p>
 </header>
+<section class="panel tutorial-panel">
+<div class="section-head"><div class="section-icon"><i class="fa-solid fa-circle-play"></i></div><div><h2>آموزش تصویری ملی‌شکن</h2><p>ویدیو را همین‌جا ببین یا مستقیم دانلود کن</p></div></div>
+<div class="video-wrap">
+<video controls playsinline preload="metadata">
+<source src="./sinavm_telegram_melishekan_video.mp4" type="video/mp4">
+مرورگر شما از پخش ویدیو پشتیبانی نمی‌کند.
+</video>
+</div>
+<div class="video-actions">
+<a class="btn video-download" href="./sinavm_telegram_melishekan_video.mp4" download="sinavm_telegram_melishekan_video.mp4"><i class="fa-solid fa-download"></i> دانلود مستقیم ویدیو</a>
+<a class="btn copy" href="./sinavm_telegram_melishekan_video.mp4" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> باز کردن ویدیو</a>
+</div>
+<p class="video-hint">برای تماشای آموزش نیازی به ورود به تلگرام یا VPN نیست. اگر پخش آنلاین برایت راحت نبود، از دکمه دانلود مستقیم استفاده کن.</p>
+</section>
 <section class="panel">
 <div class="section-head"><div class="section-icon"><i class="fa-solid fa-mobile-screen-button"></i></div><div><h2>۱. برنامه و آموزش</h2><p>اگر برنامه را نداری، ابتدا نصبش کن</p></div></div>
 <div class="steps">
