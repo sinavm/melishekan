@@ -1,19 +1,15 @@
-# melishekan
+# ملی‌شکن
 
-آخرین فایل NV کانال `@sinavm` اینجا می‌نشیند.
+صفحه دریافت فایل‌های کانفیگ و راهنمای استفاده:
 
-مسیر:
-1. پست جدید NV در کانال
-2. ریپو `sinavm/sinavm` فایل را به `media/nv-latest-1.npvs` می‌برد
-3. این ریپو همان فایل را جایگزین می‌کند
+- [ورود به صفحه دانلود کانفیگ‌های HTTP Custom](https://sinavm.github.io/melishekan/)
+- [دانلود فایل NV](https://raw.githubusercontent.com/sinavm/melishekan/main/sinavm.npvs)
 
-## دانلود ثابت
+## راهنمای HTTP Custom
 
-- https://raw.githubusercontent.com/sinavm/melishekan/main/sinavm.npvs
-- https://raw.githubusercontent.com/sinavm/melishekan/main/sinavm-nv_01.npv
+1. برنامه [HTTP Custom برای اندروید](https://play.google.com/store/apps/details?id=xyz.easypro.httpcustom) را نصب کنید.
+2. وارد [صفحه کانفیگ‌ها](https://sinavm.github.io/melishekan/) شوید.
+3. فایل موردنظر را دانلود کنید و رمز نمایش‌داده‌شده در صفحه را هنگام وارد کردن فایل استفاده کنید.
+4. برای راهنمای تصویری [ویدئوی آموزشی](https://t.me/sinavm/5165) را ببینید.
 
-رمز: `@sinavm`
-
-برنامه: [iOS](https://apps.apple.com/us/app/npv-tunnel/id1629465476) · [Android](https://play.google.com/store/apps/details?id=com.napsternetlabs.napsternetv)
-
-کانال: https://t.me/sinavm
+کانال اطلاع‌رسانی: https://t.me/sinavm
