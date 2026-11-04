@@ -92,7 +92,7 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p openvpn
-          curl -fL --retry 8 --retry-all-errors --retry-delay 3 -o /tmp/latest-openvpn.json "https://raw.githubusercontent.com/sinavm/sinavm/main/media/latest-openvpn.json"
+          curl -fL --retry 8 --retry-all-errors --retry-delay 3 -o /tmp/latest-openvpn.json "https://raw.githubusercontent.com/sinavm/sinavm/main/media/latest-openvpn.json" || echo '[]' > /tmp/latest-openvpn.json
           python3 - <<'PY'
           import json, urllib.request
           from pathlib import Path
