@@ -1,4 +1,4 @@
-name: Sync latest NV from sinavm
+name: Sync latest configs from sinavm
 
 on:
   workflow_dispatch:
