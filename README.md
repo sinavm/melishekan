@@ -1,15 +1,35 @@
-# ملی‌شکن
+# ملی‌شکن | دریافت کانفیگ‌های HTTP Custom
 
-صفحه دریافت فایل‌های کانفیگ و راهنمای استفاده:
+این مخزن برای این ساخته شده که دریافت و استفاده از فایل‌های **HTTP Custom (HC)** تا جای ممکن ساده باشد. لازم نیست برای گرفتن فایل‌ها با پوشه‌ها و فایل‌های GitHub سروکار داشته باشید؛ کافی است وارد صفحه اصلی شوید و فایل موردنظرتان را دانلود کنید.
 
-- [ورود به صفحه دانلود کانفیگ‌های HTTP Custom](https://sinavm.github.io/melishekan/)
-- [دانلود فایل NV](https://raw.githubusercontent.com/sinavm/melishekan/main/sinavm.npvs)
+**[رفتن به صفحه دریافت کانفیگ‌ها](https://sinavm.github.io/melishekan/)**
 
-## راهنمای HTTP Custom
+در صفحه، فایل‌های HC به‌ترتیب نمایش داده می‌شوند و برای هرکدام لینک دانلود مستقیم و رمز فایل در دسترس است. ویدئوی آموزش هم همان‌جا قرار دارد؛ می‌توانید آن را آنلاین تماشا کنید یا دانلودش کنید. برای دیدن و دریافت ویدئو نیازی به تلگرام یا VPN نیست.
 
-1. برنامه [HTTP Custom برای اندروید](https://play.google.com/store/apps/details?id=xyz.easypro.httpcustom) را نصب کنید.
-2. وارد [صفحه کانفیگ‌ها](https://sinavm.github.io/melishekan/) شوید.
-3. فایل موردنظر را دانلود کنید و رمز نمایش‌داده‌شده در صفحه را هنگام وارد کردن فایل استفاده کنید.
-4. برای راهنمای تصویری [ویدئوی آموزشی](https://t.me/sinavm/5165) را ببینید.
+## شروع سریع
 
-کانال اطلاع‌رسانی: https://t.me/sinavm
+1. اگر HTTP Custom روی گوشی‌تان نصب نیست، آن را از [Google Play دریافت کنید](https://play.google.com/store/apps/details?id=xyz.easypro.httpcustom).
+2. به [صفحه ملی‌شکن](https://sinavm.github.io/melishekan/) بروید.
+3. یکی از فایل‌های HC را انتخاب و دانلود کنید.
+4. فایل را با HTTP Custom باز کنید و در صورت درخواست، رمز زیر را وارد کنید.
+
+**رمز فایل‌ها:** `@sinavm`
+
+## آموزش تصویری
+
+ویدئوی راهنما در خود صفحه اصلی قرار دارد. اگر ترجیح می‌دهید آن را جداگانه ذخیره کنید، از لینک زیر استفاده کنید:
+
+[دانلود مستقیم ویدئوی آموزش (MP4)](https://raw.githubusercontent.com/sinavm/melishekan/main/sinavm_telegram_melishekan_video.mp4)
+
+## فایل‌های دیگر
+
+- [دریافت فایل NV](https://raw.githubusercontent.com/sinavm/melishekan/main/sinavm.npvs)
+- [کانال SiNAVM در تلگرام](https://t.me/sinavm)
+
+## درباره مخزن
+
+فایل‌های کانفیگ و فهرست آن‌ها به‌روزرسانی می‌شوند. برای استفاده روزمره، پیشنهاد می‌کنیم همیشه از [صفحه اصلی ملی‌شکن](https://sinavm.github.io/melishekan/) وارد شوید تا آخرین فایل‌های منتشرشده را ببینید.
+
+---
+
+با ❤️ از طرف [SiNAVM](https://sinavm.github.io/sinavm/)
