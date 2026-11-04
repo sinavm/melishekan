@@ -88,11 +88,49 @@ jobs:
           (folder / 'index.json').write_text(json.dumps(published, ensure_ascii=False, indent=2), encoding='utf-8')
           print(f'published {len(published)} HTTP Custom configs')
           PY
+      - name: Sync OpenVPN configs
+        run: |
+          set -euo pipefail
+          mkdir -p openvpn
+          curl -fL --retry 8 --retry-all-errors --retry-delay 3 -o /tmp/latest-openvpn.json "https://raw.githubusercontent.com/sinavm/sinavm/main/media/latest-openvpn.json"
+          python3 - <<'PY'
+          import json, urllib.request
+          from pathlib import Path
+          source = json.loads(Path('/tmp/latest-openvpn.json').read_text(encoding='utf-8'))
+          folder = Path('openvpn')
+          for old in folder.glob('openvpn-*.ovpn'):
+              old.unlink()
+          published = []
+          for i, item in enumerate(source[:5], 1):
+              media_path = item.get('url') or ''
+              if not media_path.startswith('media/'):
+                  continue
+              raw_url = 'https://raw.githubusercontent.com/sinavm/sinavm/main/' + media_path
+              request = urllib.request.Request(raw_url, headers={'User-Agent': 'SiNAVM-config-sync'})
+              with urllib.request.urlopen(request, timeout=45) as response:
+                  data = response.read()
+              if len(data) < 100 or (b'<client>' not in data[:20000] and b'remote ' not in data[:20000]):
+                  raise SystemExit(f'invalid OpenVPN config: {item.get("original_name")!r}')
+              filename = f'openvpn-{i:02d}.ovpn'
+              (folder / filename).write_bytes(data)
+              published.append({
+                  'id': item.get('id'),
+                  'name': item.get('original_name') or filename,
+                  'filename': filename,
+                  'download': filename,
+                  'size': len(data),
+                  'date': item.get('date'),
+                  'date_label': item.get('date_label'),
+                  'source': item.get('link') or 'https://t.me/sinavm'
+              })
+          (folder / 'index.json').write_text(json.dumps(published, ensure_ascii=False, indent=2), encoding='utf-8')
+          print(f'published {len(published)} OpenVPN configs')
+          PY
       - name: Commit if changed
         run: |
           git config user.name sinavm
           git config user.email sina.bb2006@gmail.com
-          git add sinavm.npvs sinavm-nv_01.npv LAST_SYNC.txt hc/
+          git add sinavm.npvs sinavm-nv_01.npv LAST_SYNC.txt hc/ openvpn/
           git rm -f --ignore-unmatch melishekan.npvs melishekan-nv_01.npv || true
-          git commit -m "sync: latest configs including HTTP Custom from sinavm" || echo nochange
+          git commit -m "sync: latest configs including HTTP Custom and OpenVPN from sinavm" || echo nochange
           git push
