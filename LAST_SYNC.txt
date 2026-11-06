@@ -1,2 +1,2 @@
-2026-11-05T23:40:49Z
+2026-11-06T06:55:28Z
 source=https://raw.githubusercontent.com/sinavm/sinavm/main/media/nv-latest-1.npvs
