@@ -1,9 +1,20 @@
 [
   {
-    "id": 5274,
-    "name": "@SiNAVM کانال تلگرام.hc",
+    "id": 5280,
+    "name": "📡@SiNAVM کانال تلگرام.hc",
     "filename": "hc-01.hc",
     "download": "hc-01.hc",
+    "size": 146003,
+    "date": 1794149622,
+    "date_label": "2026-11-08 14:53",
+    "password": "@sinavm",
+    "source": "https://t.me/sinavm/5280"
+  },
+  {
+    "id": 5274,
+    "name": "@SiNAVM کانال تلگرام.hc",
+    "filename": "hc-02.hc",
+    "download": "hc-02.hc",
     "size": 85231,
     "date": 1793808946,
     "date_label": "2026-11-04 16:15",
